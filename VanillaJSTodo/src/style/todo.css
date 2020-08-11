@@ -1,0 +1,157 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pangolin', cursive;
+  background-color: whitesmoke;
+  color: black;
+}
+
+header {
+  text-align: center;
+  align-content: center;
+  margin: 10px;
+  font-size: 2em;
+}
+
+.formContainer {
+  margin: 10px;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  margin:10px 0;
+  border: 2px solid #eee;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius:10px;
+  width:100%;
+}
+
+input[type=text]:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 2px solid rgba(81, 203, 238, 1);
+}
+
+.add {
+  padding:10px;
+  border:none;
+  background-color:#3F51B5;
+  color:#fff;
+  font-weight:600;
+  border-radius:5px;
+  width:100%;
+}
+
+h2 {
+  margin-left: 10px;
+}
+
+.todo {
+  position: relative;
+}
+
+.task {
+  position: relative;
+}
+
+.remove {
+  position: absolute;
+  right:    0;
+  bottom:   0;
+}
+
+ul,li{
+  list-style:none;
+}
+
+li {
+  display: inline-block;
+  margin: 5px;
+  text-align: left;
+}
+
+ul{
+  padding: 1em;
+  text-align: center;
+}
+
+ul li {
+  text-decoration:none;
+  color:#000;
+  word-wrap: break-word;
+  background:#ffc;
+  height:14em;
+  width:14em;
+  padding:1em;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  overflow: auto;
+}
+
+ul li:hover, ul li:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  position:relative;
+  z-index:5;
+}
+
+li button {
+  visibility: hidden;
+}
+
+.done button{
+  visibility: visible;
+  border:none;
+  padding: 10px;
+  background-color: #ffc;
+  color: red;
+  font-weight:800;
+  font-size: large;
+  border: red solid 2px;
+  border-radius:5px 5px 0px 5px;
+  width:25%;
+  float: right
+}
+
+.title {
+  font-family: 'Pangolin', cursive;
+  font-size: 2em;
+  text-decoration: underline;
+  width: auto;
+}
+.desc {
+  font-family: 'Pangolin', cursive;
+}
+
+.done {
+  text-decoration-line: line-through;
+  color: gray;
+}
+
+@media (min-width: 768px) { 
+  input {
+  width: 50%;
+}
+.add {
+  width: 50%;
+}}
+
+@media (min-width: 992px) { 
+  input {
+  width: 50%;
+}
+.add {
+  width: 50%;
+} }
+
+@media (min-width: 1200px) { 
+  input {
+  width: 50%;
+  font-size: 1em;
+}
+.add {
+  width: 10%;
+} 
+}

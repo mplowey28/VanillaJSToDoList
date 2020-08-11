@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&lt;/salt&gt; :: ToDo</title>
+  <link rel="stylesheet" type="text/css" href="./style/todo.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Tiny tasks</h1>
+  </header>
+  <div id="container" class="container">
+    <main>
+      <div class="formContainer">
+        <form>
+          <input type="text" placeholder="Title" id="title" class="formTitle"/> <br>
+          <input type="text" placeholder="Describe the task..." id="desc" class="formDesc"/> <br>
+          <button id="add" class="add">Add</button>
+        </form>
+      </div>
+      <section>
+        <h2>To do:</h2>
+        <hr>
+          <ul class="todo" id="toDo"></ul>
+        <h2>Done:</h2>
+        <hr>
+          <ul class="completed" id="completed"></ul>
+      </section>
+    </main>
+  </div>
+<script defer src="./js/todo.js"></script>
+</body>
+</html>
